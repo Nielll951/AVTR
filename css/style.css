@@ -15,8 +15,8 @@ html {
 }
 
 body {
+   background: linear-gradient(180deg, #070A1B 0%, #2A3170 100%);
    font-family: 'Roboto Condensed', sans-serif;
-   background: #070A1B;
    font-size: 16px;
    line-height: 120%;
    font-weight: 400;
@@ -47,6 +47,7 @@ button {
 
 .header {
    margin-bottom: 150px;
+   background: #070A1B;
 }
 
 .header__top {
@@ -158,6 +159,10 @@ button {
    margin-bottom: 50px;
 }
 
+.footer {
+   background: #070A1B;
+}
+
 .footer__inner {
    display: flex;
    justify-content: space-between;
@@ -251,6 +256,7 @@ button {
    grid-template-columns: 255px 255px auto 330px;
    grid-template-rows: auto auto;
    gap: 14px 44px;
+   margin-bottom: 100px;
 }
 
 .design__cell-one {
@@ -259,9 +265,62 @@ button {
 
 .design__cell-two {
    grid-row-end: -1;
+   display: flex;
+   align-items: flex-end;
 }
 
 .design__cell-three {
    grid-column-end: -1;
    grid-row-end: -1;
+   display: flex;
+   align-items: flex-end;
+}
+
+.design__cell-text {
+   margin-bottom: 15px;
+}
+
+.design-slider {
+   padding-bottom: 25px;
+}
+
+.design-slider__item {
+   margin: 0 20px;
+}
+
+.slick-track {
+   margin-left: -160px;
+}
+
+.arrow {
+   position: absolute;
+   z-index: 10;
+   cursor: pointer;
+   bottom: 0;
+   left: 50%;
+}
+
+.arrow-left {
+   transform: translateX(-63px);
+}
+
+.arrow-right {
+   transform: translateX(30px);
+}
+
+.design__box {
+   max-width: 590px;
+   margin: 150px auto;
+   padding: 0 10px;
+   display: flex;
+   gap: 60px;
+}
+
+.design__box-column {
+   /* flex-basis: 50%; */
+   width: 255px;
+}
+
+.design__box-text {
+   margin-bottom: 15px;
 }
